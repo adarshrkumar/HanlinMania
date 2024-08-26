@@ -1,0 +1,1 @@
+javascript:var element = false; var elements = document.querySelectorAll('video'); if (elements.length === 1) {element = elements[0]} else {element = elements[Number(prompt('Element Index'))]}; element.setAttribute('controls', true)

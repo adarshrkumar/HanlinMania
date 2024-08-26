@@ -1,0 +1,35 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  display: grid;
+  place-items: center;
+}
+
+body {
+  box-sizing: border-box;
+  
+  margin: 0;
+
+  max-height: 100%;
+  aspect-ratio: 1 / 1;
+
+  border: solid 1px black;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, calc(100%/var(--cols-amt, 0))));
+
+  overflow: hidden;
+}
+
+video {
+  /* z-index: -1; */
+  aspect-ratio: 16 / 9;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  transition: 2500ms all linear;
+  animation: slidein;
+}
